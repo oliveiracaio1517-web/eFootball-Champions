@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Champions League | eFootball Champions</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+  background:#050811;
+  color:#fff;
+  min-height:100vh;
+}
+
+header{
+  background:#080e1d;
+  border-bottom:1px solid #18243a;
+  padding:18px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#00d9ff;
+}
+
+header a{
+  color:#00d9ff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.hero{
+  padding:55px 5%;
+  background:
+    radial-gradient(circle at 80% 20%,#123c56 0%,#050811 45%);
+}
+
+.label{
+  color:#00d9ff;
+  font-weight:bold;
+  font-size:16px;
+  margin-bottom:18px;
+}
+
+h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.subtitle{
+  color:#aab5c7;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.container{
+  padding:35px 5%;
+  max-width:1000px;
+  margin:auto;
+}
+
+.card{
+  background:#0b1323;
+  border:1px solid #1d394d;
+  border-radius:18px;
+  overflow:hidden;
+  margin-bottom:25px;
+}
+
+.card-header{
+  padding:28px;
+  background:linear-gradient(135deg,#10283b,#0c1525);
+}
+
+.status{
+  color:#22c55e;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+.card-header h2{
+  font-size:30px;
+}
+
+.info{
+  padding:25px;
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:16px 0;
+  border-bottom:1px solid #1b293d;
+  color:#aab5c7;
+}
+
+.row strong{
+  color:#fff;
+}
+
+.prize{
+  color:#22c55e !important;
+  font-size:20px;
+}
+
+.rules{
+  margin-top:25px;
+}
+
+.rules h3{
+  color:#00d9ff;
+  margin-bottom:15px;
+}
+
+.rules p,
+.rules li{
+  color:#aab5c7;
+  line-height:1.7;
+}
+
+.rules ul{
+  padding-left:20px;
+}
+
+.button{
+  display:block;
+  width:100%;
+  margin-top:25px;
+  padding:16px;
+  background:#00d9ff;
+  color:#001018;
+  text-align:center;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+  font-size:17px;
+}
+
+.button:hover{
+  opacity:.9;
+}
+
+footer{
+  margin-top:40px;
+  padding:30px 5%;
+  text-align:center;
+  color:#718096;
+  border-top:1px solid #18243a;
+}
+
+@media(max-width:600px){
+  h1{
+    font-size:34px;
+  }
+
+  .card-header h2{
+    font-size:25px;
+  }
+
+  .row{
+    font-size:15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    eFootball <span>Champions</span>
+  </div>
+
+  <a href="index.html">← Início</a>
+</header>
+
+<section class="hero">
+  <div class="label">🏆 CAMPEONATO</div>
+
+  <h1>Champions League</h1>
+
+  <p class="subtitle">
+    Entre na competição, dispute suas partidas e lute pelo título
+    da Champions League do eFootball Champions.
+  </p>
+</section>
+
+<main class="container">
+
+  <div class="card">
+
+    <div class="card-header">
+      <div class="status">● INSCRIÇÕES ABERTAS</div>
+
+      <h2>Champions League</h2>
+    </div>
+
+    <div class="info">
+
+      <div class="row">
+        <span>🎮 Jogo</span>
+        <strong>eFootball</strong>
+      </div>
+
+      <div class="row">
+        <span>👥 Vagas</span>
+        <strong>32 jogadores</strong>
+      </div>
+
+      <div class="row">
+        <span>💵 Inscrição</span>
+        <strong>R$ 10,00</strong>
+      </div>
+
+      <div class="row">
+        <span>🏆 Premiação</span>
+        <strong class="prize">R$ 250,00</strong>
+      </div>
+
+      <div class="row">
+        <span>📅 Formato</span>
+        <strong>Eliminatórias</strong>
+      </div>
+
+      <div class="rules">
+
+        <h3>📋 Regras</h3>
+
+        <ul>
+          <li>32 jogadores participam do campeonato.</li>
+          <li>As partidas serão disputadas no eFootball.</li>
+          <li>O jogador deve respeitar o adversário.</li>
+          <li>Resultados devem ser enviados após cada partida.</li>
+          <li>Fraudes ou abandono podem resultar em eliminação.</li>
+        </ul>
+
+      </div>
+
+      <a href="#" class="button">
+        🚀 Quero me inscrever
+      </a>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 eFootball Champions — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
