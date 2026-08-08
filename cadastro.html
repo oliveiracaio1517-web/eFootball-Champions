@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Criar conta | eFootball Champions</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050811;
+    color:#fff;
+    min-height:100vh;
+}
+
+header{
+    padding:22px 30px;
+    border-bottom:1px solid #172238;
+    text-align:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#08d5f5;
+}
+
+.container{
+    width:90%;
+    max-width:650px;
+    margin:45px auto;
+}
+
+.card{
+    background:#0b1222;
+    border:1px solid #1b2a45;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#aeb9cc;
+    font-size:17px;
+    line-height:1.6;
+    margin-bottom:28px;
+}
+
+label{
+    display:block;
+    color:#dce5f5;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+input{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border-radius:14px;
+    border:1px solid #243450;
+    background:#070d1b;
+    color:#fff;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#08d5f5;
+}
+
+button{
+    width:100%;
+    padding:17px;
+    border:none;
+    border-radius:14px;
+    background:#08d5f5;
+    color:#031018;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.links{
+    text-align:center;
+    margin-top:25px;
+}
+
+.links a{
+    display:block;
+    color:#08d5f5;
+    text-decoration:none;
+    margin:15px 0;
+    font-size:16px;
+}
+
+.aviso{
+    background:#101a2d;
+    border:1px solid #233653;
+    border-radius:14px;
+    padding:15px;
+    margin-bottom:25px;
+    color:#aeb9cc;
+    line-height:1.5;
+    font-size:14px;
+}
+
+@media(max-width:500px){
+    .container{
+        width:94%;
+        margin:25px auto;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    h1{
+        font-size:27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        eFootball <span>Champions</span>
+    </div>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h1>📝 Criar minha conta</h1>
+
+<p class="subtitle">
+Crie sua conta para participar dos campeonatos,
+acompanhar suas partidas e disputar premiações.
+</p>
+
+<div class="aviso">
+🏆 Depois de criar sua conta, você poderá usar seus
+dados para participar dos campeonatos disponíveis.
+</div>
+
+<form action="https://formspree.io/f/xdenaayk" method="POST">
+
+<label for="nome">Nome completo</label>
+
+<input
+type="text"
+id="nome"
+name="nome"
+placeholder="Digite seu nome completo"
+required
+>
+
+<label for="email">E-mail</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Digite seu e-mail"
+required
+>
+
+<label for="id">ID do eFootball</label>
+
+<input
+type="text"
+id="id"
+name="id_efootball"
+placeholder="Digite seu ID do eFootball"
+required
+>
+
+<label for="whatsapp">WhatsApp</label>
+
+<input
+type="tel"
+id="whatsapp"
+name="whatsapp"
+placeholder="(00) 00000-0000"
+required
+>
+
+<label for="senha">Senha</label>
+
+<input
+type="password"
+id="senha"
+name="senha"
+placeholder="Crie uma senha"
+required
+>
+
+<label for="confirmar">Confirmar senha</label>
+
+<input
+type="password"
+id="confirmar"
+name="confirmar_senha"
+placeholder="Digite a senha novamente"
+required
+>
+
+<button type="submit">
+🚀 Criar minha conta
+</button>
+
+</form>
+
+<div class="links">
+
+<a href="login.html">
+🔐 Já tenho uma conta
+</a>
+
+<a href="index.html">
+← Voltar para o início
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
