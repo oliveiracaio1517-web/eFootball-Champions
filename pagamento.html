@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pagamento | eFootball Champions</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#050811;
+  color:#fff;
+  min-height:100vh;
+}
+
+header{
+  padding:25px;
+  text-align:center;
+  background:#081426;
+  border-bottom:1px solid #17263d;
+}
+
+header h1{
+  font-size:28px;
+}
+
+.blue{
+  color:#08d5f5;
+}
+
+.container{
+  max-width:650px;
+  margin:40px auto;
+  padding:20px;
+}
+
+.card{
+  background:#0b1425;
+  border:1px solid #20344f;
+  border-radius:25px;
+  padding:30px;
+  box-shadow:0 15px 40px #0008;
+}
+
+h2{
+  color:#08d5f5;
+  margin-bottom:25px;
+}
+
+.success{
+  background:#102c20;
+  border:1px solid #20c76a;
+  color:#4be58b;
+  padding:18px;
+  border-radius:15px;
+  margin-bottom:25px;
+}
+
+.price{
+  text-align:center;
+  font-size:40px;
+  font-weight:bold;
+  color:#20d66b;
+  margin:25px 0;
+}
+
+.pix{
+  background:#111e32;
+  border-radius:18px;
+  padding:20px;
+  margin-top:20px;
+}
+
+.pix h3{
+  color:#08d5f5;
+  margin-bottom:15px;
+}
+
+.pix-key{
+  background:#050811;
+  border:1px solid #30445e;
+  border-radius:10px;
+  padding:15px;
+  word-break:break-all;
+  margin:15px 0;
+}
+
+button{
+  width:100%;
+  padding:18px;
+  border:0;
+  border-radius:14px;
+  background:#08d5f5;
+  color:#031018;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.whatsapp{
+  display:block;
+  text-align:center;
+  margin-top:15px;
+  padding:16px;
+  border-radius:14px;
+  background:#20c76a;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.voltar{
+  display:block;
+  text-align:center;
+  margin-top:25px;
+  color:#08d5f5;
+  text-decoration:none;
+}
+
+@media(max-width:600px){
+  .container{
+    margin:20px auto;
+  }
+
+  .card{
+    padding:22px;
+  }
+
+  .price{
+    font-size:34px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>eFootball <span class="blue">Champions</span></h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<div class="success">
+✅ Inscrição recebida com sucesso!
+</div>
+
+<h2>🏆 Champions League</h2>
+
+<p>
+Para confirmar sua participação no campeonato,
+realize o pagamento da inscrição.
+</p>
+
+<div class="price">
+R$ 10,00
+</div>
+
+<div class="pix">
+
+<h3>💰 Pagamento via PIX</h3>
+
+<p>
+Faça o PIX de <strong>R$ 10,00</strong>
+usando a chave abaixo.
+</p>
+
+<div class="pix-key" id="pix">
+COLOQUE_SUA_CHAVE_PIX_AQUI
+</div>
+
+<button onclick="copiarPix()">
+📋 Copiar chave PIX
+</button>
+
+</div>
+
+<a
+class="whatsapp"
+href="https://wa.me/5500000000000"
+target="_blank">
+📱 Enviar comprovante pelo WhatsApp
+</a>
+
+<a
+class="voltar"
+href="index.html">
+← Voltar para o início
+</a>
+
+</div>
+
+</div>
+
+<script>
+function copiarPix(){
+
+const pix = document.getElementById("pix").innerText;
+
+navigator.clipboard.writeText(pix);
+
+alert("Chave PIX copiada!");
+}
+</script>
+
+</body>
+</html>
