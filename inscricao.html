@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inscrição | eFootball Champions</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#050811;
+  color:#fff;
+  min-height:100vh;
+}
+
+header{
+  background:#080e1d;
+  border-bottom:1px solid #16243b;
+  padding:20px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+}
+
+.logo span{
+  color:#00d9ff;
+}
+
+.back{
+  color:#00d9ff;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:16px;
+}
+
+main{
+  width:90%;
+  max-width:700px;
+  margin:50px auto;
+}
+
+.hero{
+  margin-bottom:30px;
+}
+
+.hero small{
+  color:#00d9ff;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:42px;
+  margin:15px 0;
+}
+
+.hero p{
+  color:#aeb8cc;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.form-card{
+  background:#0c1424;
+  border:1px solid #1b304b;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+.form-card h2{
+  margin-bottom:25px;
+  color:#00d9ff;
+}
+
+label{
+  display:block;
+  margin:18px 0 8px;
+  color:#dce4f2;
+  font-weight:bold;
+}
+
+input,
+select{
+  width:100%;
+  padding:16px;
+  border-radius:12px;
+  border:1px solid #263a55;
+  background:#080e1d;
+  color:#fff;
+  font-size:16px;
+  outline:none;
+}
+
+input:focus,
+select:focus{
+  border-color:#00d9ff;
+}
+
+.info{
+  margin-top:25px;
+  padding:18px;
+  border-radius:14px;
+  background:#101d31;
+  color:#b8c3d7;
+  line-height:1.6;
+}
+
+.price{
+  color:#21d66b;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.button{
+  display:block;
+  width:100%;
+  margin-top:25px;
+  padding:17px;
+  border:0;
+  border-radius:12px;
+  background:#00d9ff;
+  color:#001018;
+  font-size:18px;
+  font-weight:800;
+  text-align:center;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.button:hover{
+  opacity:.9;
+}
+
+footer{
+  text-align:center;
+  color:#71809a;
+  padding:30px;
+  margin-top:40px;
+}
+
+@media(max-width:600px){
+  .logo{
+    font-size:23px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .form-card{
+    padding:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    eFootball <span>Champions</span>
+  </div>
+
+  <a href="champions-league.html" class="back">
+    ← Voltar
+  </a>
+</header>
+
+<main>
+
+<section class="hero">
+  <small>🏆 INSCRIÇÃO</small>
+
+  <h1>Quero me inscrever</h1>
+
+  <p>
+    Preencha seus dados para participar da
+    <strong>Champions League</strong> de eFootball.
+  </p>
+</section>
+
+<div class="form-card">
+
+<h2>🎮 Dados do jogador</h2>
+
+<form>
+
+<label for="nome">Nome completo</label>
+<input
+  type="text"
+  id="nome"
+  name="nome"
+  placeholder="Digite seu nome"
+  required
+>
+
+<label for="id">ID do eFootball</label>
+<input
+  type="text"
+  id="id"
+  name="id"
+  placeholder="Digite seu ID do eFootball"
+  required
+>
+
+<label for="whatsapp">WhatsApp</label>
+<input
+  type="tel"
+  id="whatsapp"
+  name="whatsapp"
+  placeholder="(00) 00000-0000"
+  required
+>
+
+<label for="campeonato">Campeonato</label>
+
+<select id="campeonato" name="campeonato" required>
+  <option value="">Selecione</option>
+  <option value="champions-league">
+    Champions League
+  </option>
+</select>
+
+<div class="info">
+
+  <strong>💰 Valor da inscrição</strong>
+
+  <div class="price">
+    R$ 10,00
+  </div>
+
+  <br>
+
+  🏆 Premiação:
+  <strong>R$ 250,00</strong>
+
+  <br><br>
+
+  👥 Vagas:
+  <strong>32 jogadores</strong>
+
+</div>
+
+<button type="submit" class="button">
+  🚀 Enviar inscrição
+</button>
+
+</form>
+
+</div>
+
+</main>
+
+<footer>
+  © 2026 eFootball Champions
+</footer>
+
+</body>
+</html>
