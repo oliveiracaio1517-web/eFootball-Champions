@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Campeonatos | eFootball Champions</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+  background:#070b14;
+  color:#fff;
+}
+
+header{
+  background:#0b1020;
+  border-bottom:1px solid #1d293d;
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:21px;
+  font-weight:900;
+}
+
+.logo span{
+  color:#00e5ff;
+}
+
+.back{
+  color:#00e5ff;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.hero{
+  padding:55px 6% 35px;
+  background:
+    radial-gradient(circle at 80% 20%,#123c56,transparent 35%),
+    #070b14;
+}
+
+.hero small{
+  color:#00e5ff;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:clamp(36px,7vw,60px);
+  margin:12px 0;
+}
+
+.hero p{
+  color:#94a3b8;
+  max-width:650px;
+  line-height:1.6;
+}
+
+.filters{
+  padding:20px 6%;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  background:#0b1020;
+}
+
+.filter{
+  padding:10px 16px;
+  border-radius:8px;
+  border:1px solid #26344b;
+  background:#101827;
+  color:#cbd5e1;
+}
+
+.filter.active{
+  background:#00e5ff;
+  color:#001018;
+  font-weight:bold;
+}
+
+main{
+  padding:40px 6% 70px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:#0d1423;
+  border:1px solid #1d293d;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.card-head{
+  padding:25px;
+  background:linear-gradient(135deg,#12283b,#0d1423);
+}
+
+.status{
+  color:#22c55e;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.card h2{
+  margin-top:10px;
+  font-size:22px;
+}
+
+.card-body{
+  padding:22px;
+}
+
+.info{
+  display:flex;
+  justify-content:space-between;
+  padding:9px 0;
+  color:#94a3b8;
+  font-size:14px;
+  border-bottom:1px solid #182235;
+}
+
+.info strong{
+  color:#fff;
+}
+
+.prize{
+  color:#22c55e !important;
+}
+
+.button{
+  display:block;
+  margin-top:20px;
+  text-align:center;
+  padding:13px;
+  background:#00e5ff;
+  color:#001018;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.closed{
+  background:#273246;
+  color:#94a3b8;
+}
+
+footer{
+  padding:30px 6%;
+  text-align:center;
+  color:#64748b;
+  border-top:1px solid #1d293d;
+  background:#050811;
+}
+
+@media(max-width:800px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  header{
+    padding:15px 5%;
+  }
+
+  .hero,
+  main,
+  .filters{
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    eFootball <span>Champions</span>
+  </div>
+
+  <a href="index.html" class="back">
+    ← Início
+  </a>
+</header>
+
+<section class="hero">
+
+  <small>🏆 COMPETIÇÕES</small>
+
+  <h1>Campeonatos</h1>
+
+  <p>
+    Escolha seu campeonato, confira a premiação,
+    leia as regras e prepare-se para entrar em campo.
+  </p>
+
+</section>
+
+<div class="filters">
+
+  <div class="filter active">Todos</div>
+  <div class="filter">Inscrições abertas</div>
+  <div class="filter">Em breve</div>
+  <div class="filter">Encerrados</div>
+
+</div>
+
+<main>
+
+<div class="grid">
+
+  <div class="card">
+
+    <div class="card-head">
+      <span class="status">● INSCRIÇÕES ABERTAS</span>
+      <h2>Champions League</h2>
+    </div>
+
+    <div class="card-body">
+
+      <div class="info">
+        <span>🎮 Jogo</span>
+        <strong>eFootball</strong>
+      </div>
+
+      <div class="info">
+        <span>👥 Vagas</span>
+        <strong>32 jogadores</strong>
+      </div>
+
+      <div class="info">
+        <span>💵 Inscrição</span>
+        <strong>R$ 10,00</strong>
+      </div>
+
+      <div class="info">
+        <span>🏆 Premiação</span>
+        <strong class="prize">R$ 250,00</strong>
+      </div>
+
+      <a href="#" class="button">
+        Ver campeonato
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="card">
+
+    <div class="card-head">
+      <span class="status">● INSCRIÇÕES ABERTAS</span>
+      <h2>Copa Brasil</h2>
+    </div>
+
+    <div class="card-body">
+
+      <div class="info">
+        <span>🎮 Jogo</span>
+        <strong>eFootball</strong>
+      </div>
+
+      <div class="info">
+        <span>👥 Vagas</span>
+        <strong>64 jogadores</strong>
+      </div>
+
+      <div class="info">
+        <span>💵 Inscrição</span>
+        <strong>R$ 20,00</strong>
+      </div>
+
+      <div class="info">
+        <span>🏆 Premiação</span>
+        <strong class="prize">R$ 800,00</strong>
+      </div>
+
+      <a href="#" class="button">
+        Ver campeonato
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="card">
+
+    <div class="card-head">
+      <span class="status">● EM BREVE</span>
+      <h2>King of eFootball</h2>
+    </div>
+
+    <div class="card-body">
+
+      <div class="info">
+        <span>🎮 Jogo</span>
+        <strong>eFootball</strong>
+      </div>
+
+      <div class="info">
+        <span>👥 Vagas</span>
+        <strong>128 jogadores</strong>
+      </div>
+
+      <div class="info">
+        <span>💵 Inscrição</span>
+        <strong>R$ 30,00</strong>
+      </div>
+
+      <div class="info">
+        <span>🏆 Premiação</span>
+        <strong class="prize">R$ 2.000,00</strong>
+      </div>
+
+      <a href="#" class="button">
+        Ver detalhes
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  © 2026 eFootball Champions — Competições de eFootball.
+</footer>
+
+</body>
+  </html>
